@@ -8,8 +8,16 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
 @SpringBootApplication
+@EnableScheduling
+
 public class ThymeleafApplication {
 
 	public static void main(String[] args) {
@@ -24,4 +32,5 @@ public class ThymeleafApplication {
 	         }
 	      };
 	   }
+	
 }

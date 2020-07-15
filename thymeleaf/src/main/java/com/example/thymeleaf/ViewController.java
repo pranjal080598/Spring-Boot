@@ -13,6 +13,10 @@ public class ViewController {
    public String addProducts() {
       return "add-products";   
    }   
+   @RequestMapping("/locale")
+   public String locale() {
+      return "locale";
+   }
 }
 
 
